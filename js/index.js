@@ -1,11 +1,11 @@
 $(document).ready(function() {
   // Bind to login/logout links
   $(".user-functions .login a").on("click", function() {
-    site.user.login();
+    gigya.socialize.showLoginUI();
     return false;
   });
   $(".user-functions .logout a").on("click", function() {
-    site.user.logout();
+    gigya.socialize.logout();
     return false;
   });
 
@@ -34,12 +34,12 @@ $(document).ready(function() {
     }
   }
 
-  site.user.addEventHandlers({
+  gigya.socialize.addEventHandlers({
     onLogin: onLogin,
     onLogout: onLogout
   });
 
-  site.user.getUser({
+  gigya.socialize.getUserInfo({
     callback: function(response) {
       USER = response.errorCode === 0 ? response : undefined;
       $(document).ready(onUserStateChange);

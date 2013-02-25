@@ -26,9 +26,8 @@ if(empty($parsed['host']) || strpos(SITE_DOMAIN, $parsed['host']) === false) {
 
     <!--  For the demo only, not required by module - renders the page UI -->
     <script src="js/jquery.min.js"></script>
-    <script src="js/user.js"></script>
     <script type="text/javascript">
-    site.user.logout({
+    gigya.socialize.logout({
       callback: function() {
         window.location = '<?php echo str_replace("'", "\'", $_GET['returnURL']); ?>';
       }

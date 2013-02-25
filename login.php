@@ -12,17 +12,16 @@ require_once 'inc/config.php';
       forceProvidersLogout: false                           // Do not log user out of connected providers when they log out of site
     }</script>
 
-    <!--  For the demo only, not required by module - renders the page UI -->
+    <!--  For the demo only - renders the page UI -->
     <script src="js/jquery.min.js"></script>
-    <script src="js/user.js" type="text/javascript"></script>
     <script type="text/javascript">
-    site.user.addEventHandlers({
+    gigya.socialize.addEventHandlers({
       onLogin: function() {
         window.close();
       }
     });
     $(document).ready(function() {
-      site.user.login({
+      gigya.socialize.showLoginUI({
         containerID: "login"
       });
     });

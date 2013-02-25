@@ -36,7 +36,6 @@ require_once 'inc/config.php';
     }</script>
 
     <!--  For the demo only, not required by module - powers the login/logout buttons on this page -->
-    <script src="js/user.js" type="text/javascript"></script>
     <script src="js/index.js" type="text/javascript"></script>
   </head>
   <body>

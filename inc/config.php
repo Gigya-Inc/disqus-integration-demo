@@ -14,7 +14,7 @@ define('WEB_ROOT', 'http://' . SITE_DOMAIN . '/disqus/');
 define('GIGYA_API_KEY', '');
 define('GIGYA_SECRET', '');
 
-// Disqus configuration
+// See: http://disqus.com/api/applications/
 define('DISQUS_API_KEY', '');
 define('DISQUS_SECRET_KEY', '');
 define('DISQUS_SHORTNAME', '');
